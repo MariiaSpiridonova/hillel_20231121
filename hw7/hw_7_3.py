@@ -7,6 +7,8 @@ else:
         left_side = ''.join(str(j) for j in range(1, i + 1))
         right_side = left_side[-2::-1]
         row = left_side + right_side
-        print(row.rjust(n * 2 - 1, ' '))
+        print(row.ljust(n * 2 - 1, ' '))
+        # next commented print options for task with *
+        # (only one of these 3 print options should be uncommented for proper output}
         # print(row.center(n * 2 - 1, ' '))
-        # print(row.ljust(n * 2 - 1, ' '))
+        # print(row.rjust(n * 2 - 1, ' '))
