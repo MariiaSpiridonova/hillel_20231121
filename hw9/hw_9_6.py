@@ -22,7 +22,6 @@ poem = '''Любіть Україну, як сонце, любіть,
 poem = (poem.lower().replace(',', '').replace('…', '')
         .replace('.', '').replace('\n', ' ').split())
 
-print(poem)
 words_dict = {i: poem.count(i) for i in poem}
 
 most_popular = max(words_dict, key=words_dict.get)
