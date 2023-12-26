@@ -6,13 +6,18 @@ print(generated_list)
 sum_even = 0
 sum_odd = 0
 
-for i in generated_list:
-    if (i % 2) == 0:
-        sum_even += i
-    else:
-        sum_odd += i
-
-if sum_odd > sum_even:
-    print('Yes')
+# for i in generated_list:
+#     if (i % 2) == 0:
+#         sum_even += i
+#     else:
+#         sum_odd += i
+#
+# if sum_odd > sum_even:
+#     print('Yes')
+# else:
+#     print('No')
+#
+if sum(i for i in generated_list if i % 2 != 0) > sum(i for i in generated_list if i % 2 == 0):
+    print("Yes")
 else:
-    print('No')
+    print("No")
