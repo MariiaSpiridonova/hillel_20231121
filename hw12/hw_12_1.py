@@ -39,6 +39,3 @@ def input_password():
         return None
     else:
         return password
-
-#
-# input_password()
